@@ -15,8 +15,12 @@ const Category = () => {
             key={index}
             className="bg-gray-100 rounded-lg p-4 flex justify-between items-center"
           >
-            <h2 className="font-bold sm:text-xl">{item.name}</h2>
-            <img src={item.image} alt={item.name} className="w-20" />
+            <h2 className="font-bold mr-2 text-sm sm:text-xl">{item.name}</h2>
+            <img
+              src={item.image}
+              alt={item.name}
+              className="w-20 h-[80px] object-cover rounded-t-lg"
+            />
           </div>
         ))}
       </div>
